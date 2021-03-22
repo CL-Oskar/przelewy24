@@ -609,3 +609,16 @@ input#blikCode {
 .installment-payment-logo-mbank {
     width: 110px;
 }
+
+
+.p24-choose{
+	text-align: center;
+    font-size: 1.5em;
+    margin: 2em 0 1em;
+    color: black;
+    font-weight: 600;
+}
+
+.p24-payment-return-page{
+	text-align:center;
+}

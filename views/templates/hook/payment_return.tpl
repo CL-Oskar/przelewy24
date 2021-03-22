@@ -16,14 +16,14 @@
     </a>
     {if 'ok' === $status}
         <p>{l s='Your order is ready.' mod='przelewy24'}
-            <br><br>- {l s='Total amount' mod='przelewy24'}:
+            <br>{l s='Total amount' mod='przelewy24'}:
             <span class="price"><strong>{$total_to_pay}</strong></span>
-            <br><br>{l s='We sent for you email with this information.' mod='przelewy24'}
-            <br><br>{l s='For any questions or information, contact with' mod='przelewy24'}
+            <br>{l s='We sent for you email with this information.' mod='przelewy24'}
+            <br>{l s='For any questions or information, contact with' mod='przelewy24'}
             <a href="{$link->getPageLink('contact', true)|escape:'html':'UTF-8'}">{l s='customer service' mod='przelewy24'}</a>.
         </p>
         {if $P24_PAYMENT_METHOD_LIST}
-            <p>
+            <p class="p24-choose">
                 {l s='Select payment method' mod='przelewy24'}:
             </p>
         {elseif $payment_method_selected_id > 0}
